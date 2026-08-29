@@ -1,0 +1,190 @@
+* {
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* align-items: center;/ */
+  font-family: "Poppins", sans-serif;
+}
+.mainNavContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* height: 7vh; */
+  background-color: #111827;
+  color: #ffffff;
+}
+/* .mainNavContainer:hover{
+} */
+.Btncircle {
+  color: white;
+}
+.fir {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+}
+.sec {
+  width: 40%;
+}
+.thi {
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  display: flex;
+}
+.Btncircle {
+  /* background-color: #fff; */
+  font-size: 27px;
+  padding: 5px;
+  border-radius: 150px;
+  border: 2px solid white;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  /* border: none; */
+  /* border-radius: 50%; */
+  /* background: #111827; */
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+.Btncircle::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(
+    90deg,
+    #4285f4,
+    #9b51e0,
+    #ff4b4b,
+    #f9ab00,
+    #4285f4
+  );
+  background-size: 300% 100%;
+  z-index: -1;
+}
+.Btncircle:focus::before {
+  animation: gradientMove 2s linear infinite;
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 300% 50%;
+  }
+}
+.Btncircle:hover {
+  color: red;
+}
+.fir:hover {
+  color: #f97316;
+}
+.notificationBell {
+  /* padding: 2px 4px; */
+  /* border-radius: 4px; */
+  /* border: none; */
+  color: white !important;
+  font-size: 30px;
+}
+.notificationBell:hover {
+  color: red !important;
+}
+.notificationBell.shake {
+  animation: shake 0.1s infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-10px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  75% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+.notificationBell:active {
+  color: aqua !important;
+}
+.H1DedignNav {
+  display: inline;
+  position: relative;
+  /* bottom: 30px;  */
+  align-items: center;
+  text-align: center;
+  margin: 8px 0 0 10px;
+  padding: auto;
+  font-weight: 600;
+  font-size: 40px;
+}
+.imgLogo {
+  /* width: 60px; */
+  width: 120px;
+  padding-left: 20px;
+  /* height: 100%; */
+  object-fit: cover;
+  object-position: fixed;
+}
+.Btnnormal {
+  padding: 5px;
+  border-radius: 4px;
+  border: none;
+}
+button {
+  background-color: #111827;
+  border: none;
+}
+
+
+/*  */
+.gradientText {
+  color: white;
+  cursor: pointer;
+}
+
+.gradientText.active {
+  background: linear-gradient(
+    90deg,
+    #4285f4,
+    #9b51e0,
+    #ff4b4b,
+    #f9ab00,
+    #4285f4
+  );
+
+  background-size: 300% 100%;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradientTextMove 2s linear infinite;
+}
+
+@keyframes gradientTextMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 300% 50%;
+  }
+}
