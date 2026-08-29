@@ -21,16 +21,17 @@
   color: white;
 }
 .fir {
-  width: 30%;
+  width: 50%;
   display: flex;
   align-items: center;
   font-size: 36px;
+  justify-content: center;
 }
 .sec {
-  width: 40%;
+  width: 25%;
 }
 .thi {
-  width: 30%;
+  width: 25%;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -137,11 +138,13 @@
 }
 .imgLogo {
   /* width: 60px; */
-  width: 120px;
-  padding-left: 20px;
+  width: 100px;
+  /* padding-left: 60px;/ */
   /* height: 100%; */
   object-fit: cover;
   object-position: fixed;
+  text-align: center;
+  justify-content: center;
 }
 .Btnnormal {
   padding: 5px;

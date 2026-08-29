@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+/* SIDEBAR */
+
+.sidebar {
+  width: 75px;
+  height: 100vh;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  background: #292c3d;
+
+  color: white;
+
+  overflow: hidden;
+
+  transition: width 0.3s ease;
+
+  z-index: 1000;
+}
+
+
+/* OPEN */
+
+.sidebar.open {
+  width: 280px;
+}
+
+
+/* TOP */
+
+.sidebar-top {
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  padding: 0 15px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* LOGO */
+
+.sidebar-logo {
+  width: 0;
+  opacity: 0;
+
+  object-fit: contain;
+
+  transition:
+    width 0.3s ease,
+    opacity 0.2s ease;
+}
+
+
+/* Logo open hone par */
+
+.sidebar.open .sidebar-logo {
+  width: 170px;
+  opacity: 1;
+}
+
+
+/* TOGGLE */
+
+.toggle-btn {
+  min-width: 45px;
+  width: 45px;
+  height: 45px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #aaa;
+
+  font-size: 21px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+
+/* Toggle Hover */
+
+.toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+
+  transform: scale(1.08);
+}
+
+
+/* Toggle Click */
+
+.toggle-btn:active {
+  transform: scale(0.92);
+}
+
+
+/* MENU */
+
+.sidebar-menu {
+  padding-top: 20px;
+}
+
+
+/* MENU ITEM */
+
+.menu-item {
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+
+  color: white;
+
+  text-decoration: none;
+
+  transition: 0.25s ease;
+
+  white-space: nowrap;
+}
+
+
+/* ICON */
+
+.menu-icon {
+  min-width: 75px;
+  width: 75px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 21px;
+}
+
+
+/* NAME */
+
+.menu-name {
+  opacity: 0;
+
+  transform: translateX(-10px);
+
+  font-size: 17px;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+/* OPEN NAME */
+
+.sidebar.open .menu-name {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* HOVER */
+
+.menu-item:hover {
+  background: #3b3e50;
+}
+
+
+/* ACTIVE EXAMPLE */
+
+.menu-item:first-child {
+  background: #777982;
+}
