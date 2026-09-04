@@ -7,7 +7,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-
 /* SIDEBAR */
 
 .sidebar {
@@ -29,13 +28,11 @@ body {
   z-index: 1000;
 }
 
-
 /* OPEN */
 
 .sidebar.open {
   width: 280px;
 }
-
 
 /* TOP */
 
@@ -53,7 +50,6 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-
 /* LOGO */
 
 .sidebar-logo {
@@ -67,14 +63,12 @@ body {
     opacity 0.2s ease;
 }
 
-
 /* Logo open hone par */
 
 .sidebar.open .sidebar-logo {
   width: 170px;
   opacity: 1;
 }
-
 
 /* TOGGLE */
 
@@ -101,7 +95,6 @@ body {
   transition: 0.25s ease;
 }
 
-
 /* Toggle Hover */
 
 .toggle-btn:hover {
@@ -111,20 +104,17 @@ body {
   transform: scale(1.08);
 }
 
-
 /* Toggle Click */
 
 .toggle-btn:active {
   transform: scale(0.92);
 }
 
-
 /* MENU */
 
 .sidebar-menu {
   padding-top: 20px;
 }
-
 
 /* MENU ITEM */
 
@@ -143,7 +133,6 @@ body {
   white-space: nowrap;
 }
 
-
 /* ICON */
 
 .menu-icon {
@@ -156,7 +145,6 @@ body {
 
   font-size: 21px;
 }
-
 
 /* NAME */
 
@@ -172,7 +160,6 @@ body {
     transform 0.2s ease;
 }
 
-
 /* OPEN NAME */
 
 .sidebar.open .menu-name {
@@ -180,16 +167,13 @@ body {
   transform: translateX(0);
 }
 
-
 /* HOVER */
 
 .menu-item:hover {
   background: #3b3e50;
 }
 
-
-/* ACTIVE EXAMPLE */
-
-.menu-item:first-child {
+/* ACTIVE */
+.menu-item.active {
   background: #777982;
 }

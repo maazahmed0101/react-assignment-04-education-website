@@ -1,5 +1,6 @@
 import { useState } from "react";
-import img from '../logo/M-A_Logo.svg'
+import img from "../logo/M-A_Logo.svg";
+import { NavLink } from "react-router-dom";
 import {
   FaBars,
   FaHome,
@@ -18,22 +19,27 @@ const Sidebar = () => {
     {
       icon: <FaHome />,
       name: "Home",
+      path: "/",
     },
     {
       icon: <FaBook />,
       name: "Courses",
+      path: "/cources",
     },
     {
       icon: <FaChalkboardTeacher />,
       name: "Instructors",
+      path: "/instraction",
     },
     {
       icon: <FaInfoCircle />,
       name: "About",
+      path: "/about",
     },
     {
       icon: <FaEnvelope />,
       name: "Contact Us",
+      path: "/contact",
     },
   ];
 
@@ -51,11 +57,17 @@ const Sidebar = () => {
       {/* MENU */}
       <nav className="sidebar-menu">
         {menuItems.map((item) => (
-          <a href="#" className="menu-item" key={item.name}>
+          <NavLink
+            to={item.path}
+            className={({ isActive }) =>
+              `menu-item ${isActive ? "active" : ""}`
+            }
+            key={item.name}
+          >
             <span className="menu-icon">{item.icon}</span>
 
             <span className="menu-name">{item.name}</span>
-          </a>
+          </NavLink>
         ))}
       </nav>
     </aside>

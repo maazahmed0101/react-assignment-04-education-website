@@ -191,3 +191,8 @@ button {
     background-position: 300% 50%;
   }
 }
+
+
+.mainNavContainer{
+  position: fixed;
+}

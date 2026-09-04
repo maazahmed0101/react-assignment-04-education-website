@@ -1,21 +1,21 @@
 import React from "react";
-import { BrowserRouter, Routes ,  Route} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home.jsx";
+import Contact from "../pages/Contact.jsx";
+import About from "../pages/About.jsx";
+import Cources from "../pages/Cources.jsx";
+import Instructors from "../pages/Instructors.jsx";
 
 export default function Rte() {
   return (
     <>
-    <BrowserRouter>
-     <Routes>
-        <Route path='/About' element={<Home />} />
-        <Route path='/about 'element={<about />} />
-        {/* <Route path='/cources' element={} /> */}
-        <Route path='//src' element={<Home />} />
-        <Route path='/' element={<Home />}  / >
-
-     </Routes>
-
-    </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/cources" element={<Cources />} />
+        <Route path="/instraction" element={<Instructors />} />
+      </Routes>
     </>
   );
 }
